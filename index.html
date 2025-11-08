@@ -233,6 +233,16 @@
             box-shadow: var(--shadow-md);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-left: 4px solid var(--primary-color);
+            overflow: hidden;
+        }
+
+        .type-card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: block;
         }
 
         .type-card:hover {
@@ -427,26 +437,64 @@
         footer {
             background-color: var(--secondary-color);
             color: var(--white);
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem;
             text-align: center;
         }
 
-        .footer-links {
+        footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer > p:nth-of-type(1) {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .social-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
+            gap: 1.5rem;
         }
 
-        .footer-links a {
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
             color: var(--white);
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
         }
 
-        .footer-links a:hover {
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             opacity: 0.8;
+            font-size: 0.9rem;
         }
 
         /* Floating WhatsApp Button */
@@ -497,9 +545,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .footer-links {
-                gap: 1rem;
-            }
+
 
             .modal-content {
                 width: 95%;
@@ -538,8 +584,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Redutores Novos: A Solução de Transmissão Definitiva para Sua Indústria</h1>
-            <p>Garanta Máxima Eficiência e Durabilidade. Redutores Standard, Customizados e Intercambiáveis com a Qualidade REDUMEC.</p>
+            <h1>Redutores Novos<br>A solução de transmissão definitiva para sua indústria</h1>
             <div class="hero-cta">
                 <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20redutores%20novos.%20Poderíamos%20conversar%20sobre%20minhas%20necessidades?" class="btn btn-primary" target="_blank">💬 Solicitar Orçamento via WhatsApp</a>
                 <button class="btn btn-secondary" onclick="openModal()">Preencher Formulário</button>
@@ -556,14 +601,17 @@
                 <div class="type-card">
                     <h3>Redutores Standard / Customizados</h3>
                     <p>Redutores de alta performance, prontos para uso ou projetados sob medida para atender às suas especificações técnicas mais exigentes. Versatilidade e adequação a projetos específicos.</p>
+                    <img src="assets/redutor-standard.jpg" alt="Redutor Standard / Customizado" class="type-card-image">
                 </div>
                 <div class="type-card">
                     <h3>Redutores Intercambiáveis</h3>
                     <p>Soluções intercambiáveis com as principais marcas do mercado (Flender, PTI-Falk, SEW, Transmotecca, etc.), garantindo a continuidade da sua operação sem adaptações complexas.</p>
+                    <img src="assets/redutor-intercambiavel.jpg" alt="Redutor Intercambiável" class="type-card-image">
                 </div>
                 <div class="type-card">
                     <h3>Geometrias Específicas</h3>
                     <p>Linha completa de redutores com diferentes configurações de eixos: Eixos Ortogonais, Eixos Paralelos, Planetários, Concêntricos e Cicloidais.</p>
+                    <img src="assets/redutor-eixos.jpg" alt="Geometrias Específicas" class="type-card-image">
                 </div>
             </div>
         </div>
@@ -660,12 +708,25 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="#tipos">Tipos</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#contato">Contato</a>
+        <h3>REDUMEC</h3>
+        <p>Manutenção Especializada de Redutores Industriais</p>
+        
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>📞 (11) 94113-7834</p>
+            <p>📧 servicos@redumec.com.br</p>
         </div>
-        <p>&copy; 2025 REDUMEC. Todos os direitos reservados.</p>
+        
+        <div class="footer-section">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+        
+        <p class="footer-copyright">&copy; 2025 REDUMEC. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Floating WhatsApp Button -->
