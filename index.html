@@ -227,21 +227,24 @@
         }
 
         .type-card {
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid var(--primary-color);
-            overflow: hidden;
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 0.75rem;
+        box-shadow: var(--shadow-md);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-left: 4px solid var(--primary-color);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         }
-
+    
         .type-card-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-radius: 0.5rem;
-            margin-top: 1rem;
+            border-radius: 0.5rem;  
+            margin-top: auto;
             display: block;
         }
 
