@@ -44,7 +44,7 @@ Gerar **leads qualificados** e pedidos de orçamento para redutores novos, desta
 - Análise de SEO com foco em palavras-chave:  
   *redutores industriais, redutores customizados, manutenção e venda de redutores*
 
-## Estratégia de Deploy (sugestão)
+## Estratégia de Deploy
 - **Amazon S3** — Hospedagem estática segura e performática  
 - **Amazon CloudFront** — CDN global com compressão e cache geodistribuído  
 - **AWS Certificate Manager (ACM)** — Certificado SSL/TLS gratuito e automático  
