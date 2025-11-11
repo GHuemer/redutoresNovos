@@ -48,8 +48,8 @@ Gerar **leads qualificados** e pedidos de orçamento para redutores novos, desta
 - **Amazon S3** — Hospedagem estática segura e performática  
 - **Amazon CloudFront** — CDN global com compressão e cache geodistribuído  
 - **AWS Certificate Manager (ACM)** — Certificado SSL/TLS gratuito e automático  
-- **DNS** — Configuração de domínio com CNAME/ALIAS apontando para o CloudFront  
-- **Monitoramento** — Logs de acesso ativados e integração com **CloudWatch** para métricas de tráfego e erros
+- **DNS** — Configuração de domínio com CNAME apontando para o CloudFront  
+
 
 ## Extras
 - Integração com **Google Analytics 4** e **Meta Pixel** para rastreamento de conversões  
